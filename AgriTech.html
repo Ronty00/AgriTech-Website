@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTech App</title>
+    <!-- Include the Tailwind CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      html{scroll-behavior: smooth;}
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="flex justify-between items-center py-4 px-6 bg-green-500 text-white">
+      <h1 class="text-2xl font-bold">AgriTech</h1>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a style="color:#ffffff;" class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#ffffff;" class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#ffffff;" class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#ffffff;" class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </header>
+    
+    <!-- Hero section -->
+    <section class="flex justify-center items-center py-32 px-6 bg-gray-100">
+      <div class="max-w-lg">
+        <h2 class="text-4xl font-bold mb-6">Welcome to AgriTech</h2>
+        <p class="text-gray-500 mb-8">The ultimate mobile app for farmers who want to increase their 
+          crop yields and optimize their farming practices.</p>
+       <!--<button class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded">Get Started</button>--> 
+       <a style="text-decoration:none" href="file:///C:/Users/Souvik%20Baidya/Documents/Agri-tech%20app/Login.html" 
+        class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded">Get Started
+       </a>
+      </div>
+    </section>
+    
+    <!-- Features section -->
+    <section class="py-20 px-6" id="features">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Real-Time Weather Updates</h3>
+            <p class="text-gray-500 mb-4">Get accurate, up-to-the-minute weather information for your farm's location.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Learn more
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title mb-4" id="exampleModalLabel">Real-Time Weather Updates</h1>
+                  </div>
+                  <div class="modal-body">
+                    "Real-time weather updates provide instant, up-to-the-minute information about current weather conditions, 
+                    including temperature, humidity, wind speed, and precipitation. These updates are essential for planning daily 
+                    farming activities and staying prepared for changing weather patterns."
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Soil Analysis</h3>
+            <p class="text-gray-500 mb-4">Get detailed information about your soil's nutrient levels and pH balance.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              Learn more
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title mb-4" id="exampleModalLabel">Soil Analysis</h1>
+                  </div>
+                  <div class="modal-body">
+                    "Soil analysis is a crucial agricultural practice that involves evaluating soil 
+                    quality and composition to optimize crop growth. It provides essential insights into 
+                    nutrient levels, pH balance, and organic matter content, guiding farmers in making informed decisions 
+                    for efficient and sustainable farming practices."
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Crop Management</h3>
+            <p class="text-gray-500 mb-4">Track your crops' growth, development, and yield potential.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Learn more
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title mb-4" id="exampleModalLabel">Crop Management</h1>
+                  </div>
+                  <div class="modal-body">
+                    "Crop management encompasses a range of practices aimed at optimizing agricultural 
+                    production. It includes activities such as soil preparation, planting, irrigation, 
+                    fertilization, pest control, and harvesting. Effective crop management ensures higher 
+                    yields, improved crop quality, and sustainable farming practices."
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+<!-- About section -->
+<section class="py-32 px-6 bg-gray-100" id="about">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-8">About AgriTech</h2>
+    <p class="text-gray-500 mb-8">AgriTech is a mobile app designed to help farmers increase crop
+       yields and optimize farming practices. Our app provides real-time weather updates, soil analysis, 
+       and crop management tools, so you can make informed decisions about your farm's operations.
+    </p>
+    <!--<button class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded">Get Started</button>-->
+    <a style="text-decoration:none" href="file:///C:/Users/Souvik%20Baidya/Documents/Agri-tech%20app/Login.html" 
+      class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded">Get Started</a>
+  </div>
+</section>
+
+<!-- Contact section -->
+<section class="py-20 px-6" id="contact">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+    <form class="max-w-lg">
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-2" for="name">Name</label>
+        <input class="border border-gray-300 rounded-md py-2 px-3" type="text" id="name" name="name">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+        <input class="border border-gray-300 rounded-md py-2 px-3" type="email" id="email" name="email">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+        <textarea class="border border-gray-300 rounded-md py-2 px-3" id="message" name="message" rows="4"></textarea>
+      </div>
+      <button class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer section -->
+<footer class="py-4 px-6 bg-gray-300 text-gray-600">
+  <div class="flex justify-between items-center">
+    <p>&copy; 2023 AgriTech. All rights reserved. Copyrighted by Souvik Baidya.</p>
+    <nav>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+        Privacy Policy
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title mb-4" id="exampleModalLabel">Privacy Policy</h1>
+            </div>
+            <div class="modal-body">
+              <h6>1. Introduction</h6>
+                <p>Welcome to AgriTech. At AgriTech we respect your privacy and are committed to protecting your personal information. 
+                  This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your personal information.
+                  By accessing or using our website or app, you consent to the practices described in this Privacy Policy.
+                </p>
+              <h6>2. Information We Collect</h6>
+                <p>We collect “Non-Personal Information” and “Personal Information.” Non-Personal Information includes information that cannot be used to personally identify you, 
+                  such as anonymous usage data, general demographic information we may collect, referring/exit pages and URLs, platform types, preferences you submit and preferences that are generated based on the data you submit and number of clicks. 
+                  Personal Information includes your email, name, address, and phone number, which you submit to us through the registration process at the Site.
+                </p>
+              <h6>3. How We Use and Share Information</h6>
+                <p>Personal Information:</p>
+                <p>Except as otherwise stated in this Privacy Policy, we do not sell, trade, rent, or otherwise share for marketing purposes your Personal Information with third parties without your consent. 
+                  We do share Personal Information with vendors who are performing services for the Company, such as the servers for our email communications who are provided access to user’s email address for purposes of sending emails from us. 
+                  Those vendors use your Personal Information only at our direction and in accordance with our Privacy Policy.
+                </p>
+                <p>In general, the Personal Information you provide to us is used to help us communicate with you. 
+                  For example, we use Personal Information to contact users in response to questions, solicit feedback from users, provide technical support, and inform users about promotional offers.
+                </p>
+                <p>Non-Personal Information:</p>
+                <p>In general, we use Non-Personal Information to help us improve the Service and customize the user experience. 
+                  We also aggregate Non-Personal Information in order to track trends and analyze use patterns of the Service. 
+                  This Privacy Policy does not limit in any way our use or disclosure of Non-Personal Information and we reserve the right to use and disclose such Non-Personal Information to our partners, advertisers and other third parties at our discretion.
+                </p>
+              <h6>4. How We Protect Information</h6>
+                <p>We implement security measures designed to protect your information from unauthorized access. 
+                  Your account is protected by your account password and we urge you to take steps to keep your personal information safe by not disclosing your password and by logging out of your account after each use. 
+                  We further protect your information from potential security breaches by implementing certain technological security measures including encryption, firewalls and secure socket layer technology. 
+                  However, these measures do not guarantee that your information will not be accessed, disclosed, altered or destroyed by breach of such firewalls and secure server software. 
+                  By using our Service, you acknowledge that you understand and agree to assume these risks.
+                </p>
+              <h6>5. Your Rights Regarding the Use of Your Personal Information</h6>
+                <p>You have the right at any time to prevent us from contacting you for marketing purposes. 
+                  When we send a promotional communication to a user, the user can opt out of further promotional communications by following the unsubscribe instructions provided in each promotional e-mail. 
+                  You can also indicate that you do not wish to receive marketing communications from us in the “Settings” section of the Site. 
+                  Please note that notwithstanding the promotional preferences you indicate by either unsubscribing or opting out in the Settings section of the Site, 
+                  we may continue to send you administrative emails including, for example, periodic updates to our Privacy Policy.
+                </p>
+              <h6>6. Links to Other Websites</h6>
+                <p>As part of the Service, we may provide links to or compatibility with other websites or applications. 
+                  However, we are not responsible for the privacy practices employed by those websites or the information or content they contain. 
+                  This Privacy Policy applies solely to information collected by us through the Site and the Service. 
+                  Therefore, this Privacy Policy does not apply to your use of a third-party website accessed by selecting a link via our Site or via our Service. 
+                  To the extent that you access or use the Service through or on another website or application, then the privacy policy of that other website or application will apply to your access or use of that site or application. 
+                  We encourage our users to read the privacy statements of other websites before proceeding to use them.
+                </p>
+              <h6>7. Changes to Our Privacy Policy</h6>
+                <p>We reserve the right to change this privacy policy at any time. 
+                  If our company decides to change this Privacy Policy, we will post those changes on our website so our users and customers are always aware of what information we collect, use, and disclose. 
+                  If we decide to change our privacy policy, we will post those changes to this privacy statement, the homepage, and other places we deem appropriate so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it. 
+                  We reserve the right to modify this privacy statement at any time, so please review it frequently. 
+                  If we make material changes to this policy, we will notify you here, by email, or by means of a notice on our homepage.
+                </p>
+              <h6>8. Contact Us</h6>
+                <p>If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an 
+                  email to souvikbaidya00@gmail.com</p>    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+        Terms and Conditions
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title mb-4" id="exampleModalLabel">Terms and Conditions for AgriTech</h1>
+            </div>
+            <div class="modal-body">
+              <h6>Please read these Terms and Conditions carefully before using This site operated by SB Ltd.</h6>
+              <h6>1. Acceptance of Terms</h6>
+              <p>By accessing or using the App in any way, you agree to be bound by these Terms and all 
+                applicable laws and regulations. If you do not agree to these Terms, please do not use the App.
+              </p>
+              <h6>2. Use of the App</h6>
+              <p>a. Eligibility: You must be at least 18 years old or have legal parental or guardian consent to use this App.
+                 <br>b. License: We grant you a limited, non-exclusive, non-transferable, and revocable license to use the App for personal and
+                 non-commercial purposes.<br>
+                 c. User Account: To use certain features of the App, you may be required to create a user account. 
+                 You are responsible for maintaining the confidentiality of your account information and agree to accept responsibility 
+                 for all activities that occur under your account.
+              <h6>3. Privacy</h6>
+              <p>Your use of the App is also governed by our <a href="#exampleModal3">Privacy Policy</a>, 
+                which is incorporated by reference into these Terms.
+              </p>
+              <h6>4. Intellectual Property</h6>
+              <p>a. App Ownership: We retain all rights, ownership, and interest in the App, including all associated intellectual property rights. <br>
+                 b. Trademarks: "AgriTech" and all associated logos displayed within the App are our trademarks (unless otherwise noted). 
+                  You may not use our trademarks without our prior written permission. <br>
+                 c. User License: You may not modify, reproduce, distribute, or create derivative works based on the App.
+              </p>
+              <h6>5. Disclaimers</h6>
+              <p>a. No Warranties: The App is provided "as is" without warranties of any kind, whether express or implied. <br>
+                 b. Third-Party Content: We are not responsible for any third-party content that you access with the App. 
+                 You assume all risks when accessing third-party content. <br>
+                 c. Third-Party Services: The App may contain links to third-party websites or services that we don't own or control. 
+                 You may also need to use a third party's product or service in order to use some features of the App. 
+                 When you access these third-party services, you do so at your own risk. The third parties may require you to accept 
+                 their own terms of use. We are not a party to those agreements; they are solely between you and the third party. <br>
+              </p>
+              <h6>6. Limitation of Liability</h6>
+              <p> 
+                a. We will not be liable for any indirect, special, incidental, consequential, exemplary, or 
+                punitive damages of any kind, under any contract, tort (including negligence), strict liability, 
+                or other theory, including damages for loss of profits, use, or data, arising out of or relating to 
+                the App, even if we have been notified of the possibility of such damages in advance. <br>
+                b. Our total liability for any claim arising out of or relating to the App is limited to $100 or the 
+                amount that you have paid us for use of the App. <br>
+                c. Applicable law may not allow the limitation or exclusion of liability or incidental or consequential 
+                damages, so the above limitation or exclusion may not apply to you. In such cases, our liability will be 
+                limited to the fullest extent permitted by applicable law.
+              </p>
+              <h6>7. Indemnification</h6>
+              <p>
+                You agree to indemnify, defend, and hold harmless us, our affiliates, officers, directors, employees, 
+                agents, and third party partners from and against all claims, losses, expenses, damages, and costs, 
+                including reasonable attorneys' fees, resulting from: <br>
+                a. your use of the App; <br>
+                b. your violation of these Terms; <br>
+                c. your violation of any third party rights; <br>
+              </p>
+              <h6>8. Termination</h6>
+              <p>
+                a. Termination: We may terminate your access to all or any part of the App at any time, with or without cause, 
+                with or without notice, effective immediately. <br>
+                b. Survival: All provisions of these Terms which by their nature should survive termination will survive termination, 
+                including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+              </p>
+              <h6>9. Changes to Terms</h6>
+              <p>
+                We may change these Terms at any time by notifying you of the change in writing or electronically (including without 
+                limitation, by email or by posting a notice on the App that the terms have been "updated" or similar words). 
+                The changes also will appear in this document, which you can access at any time by going to the Terms of Use link at 
+                the footer of the App. By using the App after we have updated these Terms, you agree to the new terms. 
+                If you do not agree to the new terms, you must stop using the App.
+              </p>
+              <h6>10. Contact Us</h6>
+              <p>
+                If you have any questions about these Terms, please contact us at: <br>
+                Email: souvikbaidya00@gmail.com
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ </body>
+</html>
